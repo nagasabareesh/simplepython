@@ -6,6 +6,7 @@ phases:
       - echo Entered the build phase...
       - echo Build started on `date`
       - apt install python3.8
+      - python simplepython.py
     finally:
       - echo This always runs even if the install command fails
   post_build:
